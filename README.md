@@ -61,13 +61,13 @@ THIRD : To run the program you have to copy in the console these different comma
 #####################################################################################################################################
 
 
-#settings
+         #settings
 
-time = t
-population = p
-R0 = r
-nb_infected = i
-prop_ages = [0.2,0.6,0.2]
-nb_meet = np.array([[50,10,5],[10,50,10],[5,10,20]])
-coord_infected = []
-scenario = []
+         time = t
+         population = p
+         R0 = r
+         nb_infected = i
+         prop_ages = [0.2,0.6,0.2]
+         nb_meet = np.array([[50,10,5],[10,50,10],[5,10,20]])
+         coord_infected = []
+         scenario = []
