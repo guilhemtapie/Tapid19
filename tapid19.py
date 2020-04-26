@@ -5,16 +5,9 @@ import matplotlib.colors as mcolors
 from random import *
 import time
 
-#settings = time , population , nb_meet , prop_ages , R0 , coord_infected , nb_infected , scenario([num_measure, begin_date, ending_date])
+#Copy your paragraph settings here :
 
-time = 10
-population = 50000
-nb_meet = np.array([[50,10,5],[10,50,10],[5,10,20]])
-R0 = 4
-prop_ages = [0.2,0.6,0.2] #Proportion of every age classes
-nb_infected = 10
-coord_infected = []
-scenario = [[measures_list[1][0],begin_date,ending_date],[measures_list[5][0],begin_date2,ending_date2]]
+
 
 
 
@@ -559,19 +552,19 @@ def makeMovie(history):
     def update_img(n):
         im.set_data(history[n,:,::-1].T)
         cnt.set_text(str(n))
-        if day_measures(n)[0] == 1 :
+        if day_measures_func(n)[0] == 1 :
             mesure.set_text("Closing schools")
-        if day_measures(n)[1] == 1 :
+        if day_measures_func(n)[1] == 1 :
             mesure.set_text("Confinement")
-        if day_measures(n)[2] == 1 :
+        if day_measures_func(n)[2] == 1 :
             mesure.set_text("Quarantine")
-        if day_measures(n)[3] == 1 :
+        if day_measures_func(n)[3] == 1 :
             mesure.set_text("Barrier gestures")
-        if day_measures(n)[4] == 1 :
+        if day_measures_func(n)[4] == 1 :
             mesure.set_text("Isolation age")
-        if day_measures(n)[5] == 1 :
+        if day_measures_func(n)[5] == 1 :
             mesure.set_text("Isolation Infected")
-        if day_measures(n)[0] == 0 and day_measures(n)[1] == 0 and day_measures(n)[2] == 0 and day_measures(n)[3] == 0 and day_measures(n)[4] == 0 and day_measures(n)[5] == 0:
+        if day_measures_func(n)[0] == 0 and day_measures_func(n)[1] == 0 and day_measures_func(n)[2] == 0 and day_measures_func(n)[3] == 0 and day_measures_func(n)[4] == 0 and day_measures_func(n)[5] == 0:
             mesure.set_text("")
         return True
 
