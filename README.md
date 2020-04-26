@@ -35,12 +35,12 @@ SECOND : set up your own settings with the help of the following explainations :
 
     scenario : OPTIONAL fonctionality
        it is the tabe of the different measures you want to take with the date of begining and ending for every measures 
-          (again this is not optimized until the user interface is not implemented because it is hard to modify it with formalism     needed)
+          (again this is not optimized until the user interface is not implemented because it is hard to modify it with formalism needed)
        if you want to select the measure please modify scenario like that :
            [[measures_list[k1][0],begin_date1,ending_date1],[measures_list[k2][0],begin_date2,ending_date2],...]
               k1 (or k2) represent the measure : 
                   -k1 = 0 : closing schools
-                  -k1= 1: confinement
+                  -k1 = 1: confinement
                   -k1 = 2 : quarantine (not optimized without user interface because you can not select the area of quarantine)
                   -k1 = 3 : barrier gestures
                   -k1 = 4 : isolation for a class of age (not optimized without user interface because you can not select the age)
@@ -61,13 +61,13 @@ THIRD : To run the program you have to copy in the console these different comma
 ################################################################################################
 
 
-         #settings
+    #settings
 
-         time = t
-         population = p
-         R0 = r
-         nb_infected = i
-         prop_ages = [0.2,0.6,0.2]
-         nb_meet = np.array([[50,10,5],[10,50,10],[5,10,20]])
-         coord_infected = []
-         scenario = []
+    time = t
+    population = p
+    R0 = r
+    nb_infected = i
+    prop_ages = [0.2,0.6,0.2]
+    nb_meet = np.array([[50,10,5],[10,50,10],[5,10,20]])
+    coord_infected = []
+    scenario = []
