@@ -10,33 +10,33 @@ FIRST : open the program in your python IDE , copy the pragraph #settings from t
 SECOND : set up your own settings with the help of the following explainations :
 
     time  : it is the duration of your simulation
-    modify k to setup your duration (more than 200 is generally useless)
+       modify k to setup your duration (more than 200 is generally useless)
          
     population : it is the number of person in your population
-      modify p to setup your population (you will need a powerfull computer for more than 100,000 people)
+       modify p to setup your population (you will need a powerfull computer for more than 100,000 people)
 
-     R0 : it is the number of people that one infected contaminates
-     modify r to setup your R0 (Covid19 R0 is between 2 and 3)
+    R0 : it is the number of people that one infected contaminates
+       modify r to setup your R0 (Covid19 R0 is between 2 and 3)
       
-     nb_infected : it is the number of infected that you want at the beginning of the simulation
-         modify i to setup your number of infected
+    nb_infected : it is the number of infected that you want at the beginning of the simulation
+       modify i to setup your number of infected
 
-     prop_ages : it is the proportion of every class of age (young, adult, old)
-         it is already completed if you want classic values or modify it to setup your own (the total has to be equal to 1)
+    prop_ages : it is the proportion of every class of age (young, adult, old)
+       it is already completed if you want classic values or modify it to setup your own (the total has to be equal to 1)
 
-      nb_meet : it is a table representing the number people that every person of a class of age (young, adult, old) meet in one day 
+    nb_meet : it is a table representing the number people that every person of a class of age (young, adult, old) meet in one day 
        it is already completed if you want classic or modify it to setup your own values
 
-     coord_infected : OPTIONAL fonctionality
-             it is the coordonates of your infected at the beginning (this fonctionality is not optimized until the user interface 
-             is not implemented because you could pick out of bounds coordonates)
-            if you want to select these coordonates (for example to match with quarantine measure) you can modify by adding 
+    coord_infected : OPTIONAL fonctionality
+       it is the coordonates of your infected at the beginning (this fonctionality is not optimized until the user interface 
+           is not implemented because you could pick out of bounds coordonates)
+       if you want to select these coordonates (for example to match with quarantine measure) you can modify by adding 
                   coordonates like that : coord_infected = [(x1,y1),(x2,y2),...]
 
-      scenario : OPTIONAL fonctionality
-          it is the tabe of the different measures you want to take with the date of begining and ending for every measures 
+    scenario : OPTIONAL fonctionality
+       it is the tabe of the different measures you want to take with the date of begining and ending for every measures 
           (again this is not optimized until the user interface is not implemented because it is hard to modify it with formalism     needed)
-          if you want to select the measure please modify scenario like that :
+       if you want to select the measure please modify scenario like that :
            [[measures_list[k1][0],begin_date1,ending_date1],[measures_list[k2][0],begin_date2,ending_date2],...]
               k1 (or k2) represent the measure : 
                   -k1 = 0 : closing schools
