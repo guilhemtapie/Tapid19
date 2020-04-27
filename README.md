@@ -5,7 +5,7 @@ Code made during EuVsVirus Hackathon.
 The user interface is not implemented so to use it you have to setup the settings and follow these instructions :
 (Some implemented fonctionalities are not optimized without user interface but you still can use it by reading the code)
 
-FIRST : open the program in your python IDE , copy the pragraph #settings from this text document right after #settings in the code.
+FIRST : open the program in your python IDE , copy the pragraph #settings from this text document and paste it right after #settings in the program.
 
 SECOND : set up your own settings with the help of the following explainations :
 
