@@ -5,7 +5,7 @@ Code made during EuVsVirus Hackathon.
 If you want to use the user interface (not fully implemented) : run index.html and main.css. Or you can follow these instructions to make your simulation.
 (Some implemented fonctionalities are not optimized without user interface but you still can use it by reading the code)
 
-FIRST : open the program in your python IDE , copy the pragraph #settings from this text document and paste it right after #settings in the program.
+FIRST : open the program in your python IDE , copy the pragraph #settings from this text document and paste it instead of #settings in the program.
 
 SECOND : set up your own settings with the help of the following explainations :
 
