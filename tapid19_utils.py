@@ -391,7 +391,7 @@ def history_ani(initialization,time) :
     history_anim = np.zeros((time,xmax,ymax))
     history = initialization
     comp = 0
-    print("Wait for animation")
+    print("Making data for the animation")
     for k in range(time) :
         choice = infect_choice(history,nb_conta_av,k)
         evolution = evolve(history,k)
