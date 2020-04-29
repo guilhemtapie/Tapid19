@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset="utf-8">
+	<title> COVID-19 SIMULATION
+	</title>
+	<meta id="_self" name="Description" content="An interface for the simulation of the spread of the COVID-19">
+
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<p>
+			Do you want to choose the position of the infected persons?
+		</p>
+		<p id="yes">
+			<input type="button" id="_btny" value="YES" onclick="onButtonClick()" />
+			<label for="textInput" id="label" hidden>Enter coordinates here:</label>
+			<input type="number" id="textInput" placeholder="enter a number here..." onkeypress="getCoord(event)" hidden />
+
+		</p>
+		<script>
+			function onButtonClick() {
+				if (document.getElementById("textInput")) {
+					document.getElementById("textInput").style.display = 'block';
+					document.getElementById("label").style.display = 'block';
+
+				} else {
+
+				}
+
+			}
+
+			function getCoord(event) {
+				var code = event.keyCode;
+				if (code == 13) {
+					var variable = document.getElementById("textInput").value;
+
+					alert(variable);
+				}
+
+			}
+
+		</script>
+	<%  variable %>
+	
