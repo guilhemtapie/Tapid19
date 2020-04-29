@@ -2,7 +2,7 @@
 
 Code made during EuVsVirus Hackathon.
 
-The user interface is not implemented so to use it you have to setup the settings and follow these instructions :
+If you want to use the user interface (not fully implemented) : run index.html and main.css. Or you can follow these instructions to make your simulation.
 (Some implemented fonctionalities are not optimized without user interface but you still can use it by reading the code)
 
 FIRST : open the program in your python IDE , copy the pragraph #settings from this text document and paste it right after #settings in the program.
@@ -41,9 +41,9 @@ SECOND : set up your own settings with the help of the following explainations :
               k1 (or k2) represent the measure : 
                   -k1 = 0 : closing schools
                   -k1 = 1: confinement
-                  -k1 = 2 : quarantine (not optimized without user interface because you can not select the area of quarantine)
+                  -k1 = 2 : quarantine (you have to modify coord_quarantine : [xmin,ymin,xmax,ymax])
                   -k1 = 3 : barrier gestures
-                  -k1 = 4 : isolation for a class of age (not optimized without user interface because you can not select the age)
+                  -k1 = 4 : isolation for a class of age (you have to modify class_age :  0 for child, 1 for adult, 2 for old people)
                   -k1 = 5 : isolation of infected
 
 THIRD : To run the program you have to copy in the console these different command depending of what you want :
@@ -71,3 +71,5 @@ THIRD : To run the program you have to copy in the console these different comma
     nb_meet = np.array([[50,10,5],[10,50,10],[5,10,20]])
     coord_infected = []
     scenario = []
+    coord_quarantine = []
+    class_age = 2
